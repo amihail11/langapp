@@ -4,7 +4,7 @@ from fastapi import Depends
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
-from config import URL_DATABASE
+from src.langapp.config import URL_DATABASE
 
 engine = create_engine(URL_DATABASE)
 
