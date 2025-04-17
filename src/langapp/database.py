@@ -16,7 +16,7 @@ class Base(DeclarativeBase):
 
 
 def get_db():
-    db = SessionMaker
+    db = SessionMaker()
     try:
         yield db
     finally:
